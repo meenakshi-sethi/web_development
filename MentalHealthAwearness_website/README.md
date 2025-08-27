@@ -11,7 +11,7 @@ A responsive web application providing mental health resources, community suppor
 - Volunteer registration platform
 - Culturally-sensitive resource directory
 
-- Project Demo: [Live Demo Link if deployed](https://orchid-honest-watch-979.vscodeedu.app/)
+- Project Demo: [Live Demo Link](https://orchid-honest-watch-979.vscodeedu.app/)
   
 ## 🎯 Features
 
