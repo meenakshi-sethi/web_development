@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouAreNotAlone - Mental Health Support for International Students</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💙</text></svg>" type="image/svg+xml">
+</head>
+
+<body>
+  <div class="bg-animation"></div>
+  
+  <div class="floating-elements">
+    <div class="floating-element" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="floating-element" style="left: 20%; animation-delay: 1s;"></div>
+    <div class="floating-element" style="left: 30%; animation-delay: 2s;"></div>
+    <div class="floating-element" style="left: 40%; animation-delay: 3s;"></div>
+    <div class="floating-element" style="left: 50%; animation-delay: 4s;"></div>
+    <div class="floating-element" style="left: 60%; animation-delay: 5s;"></div>
+    <div class="floating-element" style="left: 70%; animation-delay: 0.5s;"></div>
+    <div class="floating-element" style="left: 80%; animation-delay: 1.5s;"></div>
+    <div class="floating-element" style="left: 90%; animation-delay: 2.5s;"></div>
+  </div>
+
+  <!-- Enhanced Navigation with Flexbox -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <div class="nav-brand" onclick="showTab('home')">YouAreNotAlone</div>
+      <button class="mobile-nav-toggle" onclick="toggleMobileNav()">☰</button>
+      <ul class="navbar-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" onclick="showTab('home')">Home</a></li>
+        <li><a href="#resources" class="nav-link" onclick="showTab('resources')">Resources</a></li>
+        <li><a href="#stories" class="nav-link" onclick="showTab('stories')">Stories</a></li>
+        <li><a href="#gallery" class="nav-link" onclick="showTab('gallery')">Gallery</a></li>
+        <li><a href="#support" class="nav-link" onclick="showTab('support')">Join Us</a></li>
+      </ul>
+      <div class="nav-controls">
+        <button class="theme-button" id="theme-button" onclick="toggleDarkMode()">☀️ Light Mode</button>
+        <button class="reduce-motion-button" id="reduce-motion-button" onclick="toggleReduceMotion()">🎭 Reduce Motion</button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- HOME TAB -->
+    <section id="home" class="tab-content active">
+      <header class="hero-container">
+        <div class="hero-content">
+          <h1>YouAreNotAlone</h1>
+          <h2>by Meenakshi Sethi</h2>
+          <p class="tagline">Supporting international students with evidence-based mental health resources and community connections</p>
+          <div class="hero-buttons">
+            <button class="cta-button" onclick="showTab('resources')">Find Support Now</button>
+            <button class="cta-button secondary" onclick="showTab('support')">Join Our Community</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="section">
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🌍</div>
+            <h3 class="card-title">Global Mental Health Crisis</h3>
+          </div>
+          
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&h=300&fit=crop" alt="Diverse international students supporting each other" class="hero-image">
+          
+          <p style="margin: 2rem 0; font-size: 1.1rem; line-height: 1.8;">According to the World Health Organization (WHO), 1 in 4 people will be affected by mental health disorders at some point in their lives. For international students, this risk is significantly higher due to cultural adaptation challenges, academic pressure, and social isolation.</p>
+
+          <div class="stats-container">
+            <div class="stat-item">
+              <span class="stat-number">60%</span>
+              <span class="stat-label">of international students report feeling lonely (WHO, 2023)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">45%</span>
+              <span class="stat-label">experience anxiety disorders (UN Global Health Initiative)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">38%</span>
+              <span class="stat-label">report depression symptoms (American College Health Association)</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">72%</span>
+              <span class="stat-label">don't seek help due to stigma (Mental Health America)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Links Section with Flexbox -->
+        <div class="links-section-container">
+          <div class="card-header">
+            <div class="card-icon">🔗</div>
+            <h3 class="card-title">Essential Mental Health Resources</h3>
+          </div>
+          
+          <div class="links-container">
+            <div class="link-item">
+              <div class="feature-icon">🏥</div>
+              <h4><a href="https://www.who.int/health-topics/mental-health" target="_blank">WHO Mental Health Resources</a></h4>
+              <p>Comprehensive mental health information and global initiatives from the World Health Organization</p>
+            </div>
+            <div class="link-item">
+              <div class="feature-icon">🆘</div>
+              <h4><a href="https://suicidepreventionlifeline.org/" target="_blank">Crisis Prevention Lifeline</a></h4>
+              <p>24/7 crisis support and suicide prevention resources available in multiple languages</p>
+            </div>
+            <div class="link-item">
+              <div class="feature-icon">🎓</div>
+              <h4><a href="https://www.nami.org/Your-Journey/Identity-and-Cultural-Dimensions" target="_blank">NAMI Cultural Resources</a></h4>
+              <p>National Alliance on Mental Illness resources for diverse cultural communities</p>
+            </div>
+            <div class="link-item">
+              <div class="feature-icon">🌐</div>
+              <h4><a href="https://www.mhfa.com.au/international" target="_blank">Mental Health First Aid International</a></h4>
+              <p>Training programs and resources for mental health first aid across different cultures</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Section -->
+        <div class="video-section">
+          <div class="card-header">
+            <div class="card-icon">🎥</div>
+            <h3 class="card-title">Understanding International Student Mental Health</h3>
+          </div>
+          
+          <p style="margin-bottom: 2rem;">Watch this informative video about mental health challenges faced by international students and practical strategies for support.</p>
+          
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube.com/embed/L_LUpnjgPso" 
+              title="Mental Health Support for International Students"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🎯</div>
+            <h3 class="card-title">WHO Mental Health Action Plan 2013-2030</h3>
+          </div>
+          
+          <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=300&fit=crop" alt="Mental health professionals providing culturally sensitive care" class="hero-image">
+          
+          <p style="margin-bottom: 2rem;">The World Health Organization's comprehensive Mental Health Action Plan emphasizes the need for culturally sensitive mental health services, particularly for vulnerable populations including international students and migrants.</p>
+          
+          <div class="feature-container">
+            <div class="feature-item">
+              <div class="feature-icon">🏥</div>
+              <h4 class="feature-title">Universal Health Coverage</h4>
+              <p>WHO advocates for mental health services integrated into primary healthcare systems, ensuring accessibility for all individuals regardless of their origin.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌐</div>
+              <h4 class="feature-title">Cross-Cultural Competency</h4>
+              <p>Mental health interventions must be culturally adapted and linguistically appropriate for diverse populations, including international students.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">📊</div>
+              <h4 class="feature-title">Data & Research</h4>
+              <p>Continuous monitoring and evaluation of mental health programs to ensure effectiveness across different cultural contexts and populations.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🤝</div>
+              <h4 class="feature-title">Community Integration</h4>
+              <p>Promoting social inclusion and community-based support systems to reduce isolation and improve mental health outcomes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-section">
+          <p class="quote-text">"Mental health is not a destination, but a process. It's about how you drive, not where you're going."</p>
+          <p class="quote-author">— Noam Shpancer, Clinical Psychologist</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESOURCES TAB -->
+    <section id="resources" class="tab-content">
+      <div class="section">
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🚨</div>
+            <h3 class="card-title">Emergency Mental Health Support</h3>
+          </div>
+          
+          <div class="emergency-notice">
+            <h4>🆘 Need immediate help?</h4>
+            <p>If you're in crisis, please reach out for professional support immediately. You are not alone, and help is available 24/7.</p>
+            <div class="crisis-buttons">
+              <a href="tel:988" class="emergency-btn">🇺🇸 Call 988 (US Crisis Line)</a>
+              <a href="tel:+442083621414" class="emergency-btn">🇬🇧 Call +44 20 8362 1414 (UK)</a>
+              <a href="tel:+611300659467" class="emergency-btn">🇦🇺 Call 13 00 65 94 67 (Australia)</a>
+              <a href="sms:741741" class="emergency-btn">💬 Text HOME to 741741</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🏛️</div>
+            <h3 class="card-title">Mental Health Resources</h3>
+          </div>
+          
+          <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=300&fit=crop" alt="Diverse group in therapy session showing support and understanding" class="hero-image">
+          
+          <div class="resource-container">
+            <div class="resource-item">
+              <h4 style="color: #4facfe; margin-bottom: 1rem;">🌍 WHO Mental Health Resources</h4>
+              <p>Evidence-based interventions for mental health disorders, specifically adapted for use in diverse cultural contexts.</p>
+              <a href="https://www.who.int/teams/mental-health-and-substance-use" target="_blank" style="color: #00f2fe; text-decoration: none;">→ Access WHO Resources</a>
+            </div>
+            <div class="resource-item">
+              <h4 style="color: #fa709a; margin-bottom: 1rem;">🧠 Mental Health First Aid</h4>
+              <p>Training programs teaching how to identify, understand and respond to signs of mental illnesses and substance use disorders.</p>
+              <a href="https://www.mhfa.com.au/" target="_blank" style="color: #fee140; text-decoration: none;">→ Find Training Programs</a>
+            </div>
+            <div class="resource-item">
+              <h4 style="color: #667eea; margin-bottom: 1rem;">📱 Digital Mental Health Tools</h4>
+              <p>Mobile health applications and digital interventions for mental health support and self-care.</p>
+              <a href="https://www.nami.org/About-Mental-Illness/Treatments-and-Supports/Apps-and-Online-Resources" target="_blank" style="color: #764ba2; text-decoration: none;">→ Explore Digital Tools</a>
+            </div>
+            <div class="resource-item">
+              <h4 style="color: #11998e; margin-bottom: 1rem;">🌐 International Student Support</h4>
+              <p>Resources specifically designed for international students, refugees, migrants, and diverse communities.</p>
+              <a href="https://www.mentalhealth.gov/" target="_blank" style="color: #38ef7d; text-decoration: none;">→ Access Support Resources</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🎓</div>
+            <h3 class="card-title">Campus & Community Resources</h3>
+          </div>
+          
+          <div class="resource-container">
+            <div class="resource-item">
+              <h4 style="color: #f093fb; margin-bottom: 1rem;">🏫 University Counseling Centers</h4>
+              <p>Most universities provide free counseling services specifically trained in international student challenges including cultural adjustment, visa stress, and homesickness.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Individual counseling sessions</li>
+                <li>Group therapy for international students</li>
+                <li>Crisis intervention services</li>
+                <li>Psychiatric consultations</li>
+              </ul>
+            </div>
+            <div class="resource-item">
+              <h4 style="color: #4facfe; margin-bottom: 1rem;">📞 Crisis Support Lines</h4>
+              <p>24/7 crisis hotlines offering support in multiple languages for students experiencing mental health emergencies.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Crisis Text Line (Text HOME to 741741)</li>
+                <li>National Suicide Prevention Lifeline</li>
+                <li>SAMHSA National Helpline</li>
+                <li>International crisis support networks</li>
+              </ul>
+            </div>
+            <div class="resource-item">
+              <h4 style="color: #667eea; margin-bottom: 1rem;">💻 Mental Health Apps</h4>
+              <p>Research-validated mental health applications designed for diverse populations and international use.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Headspace (meditation & mindfulness)</li>
+                <li>Calm (sleep & relaxation)</li>
+                <li>Sanvello (anxiety & depression support)</li>
+                <li>MindShift (cognitive behavioral therapy)</li>
+              </ul>
+            </div>
+            <div class="resource-item">
+              <h4 style="color: #fa709a; margin-bottom: 1rem;">🌍 Cultural Support Groups</h4>
+              <p>Community organizations and cultural centers that provide culturally-sensitive mental health support.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>International student associations</li>
+                <li>Cultural community centers</li>
+                <li>Religious and spiritual communities</li>
+                <li>Peer mentorship programs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORIES TAB -->
+    <section id="stories" class="tab-content">
+      <div class="section">
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">💬</div>
+            <h3 class="card-title">Stories of Resilience & Recovery</h3>
+          </div>
+          
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&h=300&fit=crop" alt="Students sharing experiences and building community" class="hero-image">
+          
+          <p style="margin-bottom: 2rem; font-size: 1.1rem;">These stories represent real experiences from international students who have navigated mental health challenges. Names have been changed to protect privacy, but their journeys of healing and growth are authentic and inspiring.</p>
+          
+          <div class="feature-container">
+            <div class="feature-item story-card">
+              <img src="https://images.unsplash.com/photo-1494790108755-2616c78748c5?w=300&h=200&fit=crop" alt="International student from India sharing her recovery story" class="feature-image">
+              <div class="feature-icon">🇮🇳</div>
+              <h4 class="feature-title">Priya's Journey from Mumbai to Toronto</h4>
+              <p class="story-preview">"The first semester nearly broke me. I couldn't eat, couldn't sleep, and felt completely invisible in every classroom. But discovering my university's mental health program changed everything..."</p>
+              <button class="read-more-btn" onclick="showFullStory('priya')">Read Full Story</button>
+              
+              <div class="full-story hidden" id="priya-story">
+                <p><strong>Background:</strong> Priya arrived in Toronto from Mumbai to pursue her Master's in Computer Science. Despite excellent academic preparation, she was unprepared for the emotional challenges of international study.</p>
+                
+                <p><strong>The Crisis:</strong> "The first semester nearly broke me. The winter was unlike anything I'd experienced - not just the cold, but the isolation. I couldn't eat, couldn't sleep, and felt completely invisible in every classroom. I started having panic attacks during lectures and considered dropping out multiple times."</p>
+                
+                <p><strong>Finding Help:</strong> "A friend literally walked me to the university counseling center. I was terrified they wouldn't understand my cultural background, but my counselor had specialized training in international student mental health. For the first time, someone understood that my struggles weren't just about academics."</p>
+                
+                <p><strong>The Journey:</strong> "Therapy helped me understand that homesickness and anxiety weren't personal failures - they were normal responses to major life transitions. I learned coping strategies rooted in both Western psychology and practices from my own culture."</p>
+                
+                <p><strong>Today:</strong> "I'm now in my final semester with a 3.8 GPA and a job offer from a major tech company. More importantly, I volunteer with new international students. I always tell them: you're braver than you think, and seeking help is strength."</p>
+              </div>
+            </div>
+            
+            <div class="feature-item story-card">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop" alt="Brazilian student overcoming language barriers" class="feature-image">
+              <div class="feature-icon">🇧🇷</div>
+              <h4 class="feature-title">Carlos's Transformation in Berlin</h4>
+              <p class="story-preview">"The language barrier made me feel like I was living behind glass - I could see everything but couldn't connect. Social anxiety convinced me I didn't belong..."</p>
+              <button class="read-more-btn" onclick="showFullStory('carlos')">Read Full Story</button>
+              
+              <div class="full-story hidden" id="carlos-story">
+                <p><strong>Background:</strong> Carlos moved from São Paulo to Berlin for his PhD in Mechanical Engineering. Despite being fluent in English, the academic and social demands triggered severe social anxiety.</p>
+                
+                <p><strong>The Challenge:</strong> "The language barrier made me feel like I was living behind glass - I could see everything but couldn't connect. I would rehearse simple questions for hours, terrified of making mistakes. The imposter syndrome was overwhelming."</p>
+                
+                <p><strong>The Turning Point:</strong> "The campus mental health center connected me with a counselor who specialized in academic anxiety and international student challenges. We worked on cognitive behavioral therapy techniques specifically adapted for language and cultural barriers."</p>
+                
+                <p><strong>Growth:</strong> "I learned that my 'different' perspective was actually valuable. In group projects, my Brazilian approach to problem-solving complemented the German systematic methods beautifully. I started joining cultural clubs and found community."</p>
+                
+                <p><strong>Current Success:</strong> "I'm now in my third year, have published two papers, and mentor new international PhD students. My language skills improved naturally through genuine connections rather than forced practice."</p>
+              </div>
+            </div>
+            
+            <div class="feature-item story-card">
+              <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=300&h=200&fit=crop" alt="Nigerian student practicing mindfulness" class="feature-image">
+              <div class="feature-icon">🇳🇬</div>
+              <h4 class="feature-title">Amara's Healing in London</h4>
+              <p class="story-preview">"When I missed my grandmother's funeral due to visa restrictions, I felt like I was losing pieces of myself. The grief was complicated by guilt and displacement..."</p>
+              <button class="read-more-btn" onclick="showFullStory('amara')">Read Full Story</button>
+              
+              <div class="full-story hidden" id="amara-story">
+                <p><strong>Background:</strong> Amara came to London from Lagos to study International Law. Her strong family connections became both a source of strength and, unexpectedly, of painful conflict during her studies.</p>
+                
+                <p><strong>The Loss:</strong> "When I missed my grandmother's funeral due to visa restrictions and financial constraints, I felt like I was losing pieces of myself. The grief was complicated by guilt, anger, and a profound sense of displacement."</p>
+                
+                <p><strong>Finding Balance:</strong> "My roommate introduced me to mindfulness meditation, which initially felt foreign to my Christian background. But I discovered ways to integrate contemplative practices with my faith traditions."</p>
+                
+                <p><strong>Integration:</strong> "I learned that honoring my roots while embracing growth wasn't betrayal - it was evolution. I started a Nigerian law students' society and found ways to connect my legal studies with issues affecting my home community."</p>
+                
+                <p><strong>Current Life:</strong> "I graduated with distinction and now work with an international human rights organization. I've learned to be present here while staying connected there."</p>
+              </div>
+            </div>
+
+            <div class="feature-item story-card">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=200&fit=crop" alt="Chinese student balancing expectations" class="feature-image">
+              <div class="feature-icon">🇨🇳</div>
+              <h4 class="feature-title">Li Wei's Balance in Vancouver</h4>
+              <p class="story-preview">"The pressure from family expectations was crushing. They saw counseling as failure and weakness. I was excelling academically but dying emotionally..."</p>
+              <button class="read-more-btn" onclick="showFullStory('liwei')">Read Full Story</button>
+              
+              <div class="full-story hidden" id="liwei-story">
+                <p><strong>Background:</strong> Li Wei moved from Shanghai to Vancouver for undergraduate studies in Business Administration. Coming from a high-achieving family, the pressure to succeed was immense.</p>
+                
+                <p><strong>The Pressure:</strong> "My family invested everything in my education. The pressure wasn't just about grades - it was about representing our family's honor. I was maintaining a 3.9 GPA but having daily panic attacks."</p>
+                
+                <p><strong>Cultural Conflict:</strong> "When I first considered counseling, my parents saw it as failure and weakness. In our culture, mental health struggles aren't discussed openly. I felt trapped between honoring my family and saving myself."</p>
+                
+                <p><strong>The Secret Journey:</strong> "I started seeing a counselor without telling my family. The university had therapists trained in Asian cultural dynamics who understood the complexity of filial duty versus personal wellbeing."</p>
+                
+                <p><strong>Family Evolution:</strong> "When I finally shared my experiences, my mother revealed she had struggled with similar feelings during her own university years but had no resources. My openness actually helped heal generational trauma."</p>
+                
+                <p><strong>Present Day:</strong> "I'm now pursuing my MBA and have become a peer counselor for other Asian international students. My family has learned to ask about my wellbeing, not just my grades."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">✍️</div>
+            <h3 class="card-title">Share Your Journey</h3>
+          </div>
+          
+          <p style="margin: 2rem 0; font-size: 1.1rem;">Your story has the power to help other international students feel less alone and more hopeful. Whether you're currently struggling, in recovery, or thriving, your experience matters.</p>
+          
+          <div class="feature-container">
+            <div class="feature-item">
+              <div class="feature-icon">🔒</div>
+              <h4 class="feature-title">Confidential Sharing</h4>
+              <p>All stories are anonymized and you control what details to include. Your privacy and safety are our top priorities.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">🌍</div>
+              <h4 class="feature-title">Global Impact</h4>
+              <p>Your story could reach students across continents, providing hope and practical guidance to those facing similar challenges.</p>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">💙</div>
+              <h4 class="feature-title">Community Building</h4>
+              <p>By sharing, you contribute to breaking down mental health stigma and building authentic connections across cultures.</p>
+            </div>
+          </div>
+          
+          <button class="cta-button" onclick="showShareForm()">Share Your Story</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY TAB -->
+    <section id="gallery" class="tab-content">
+      <div class="section">
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">📸</div>
+            <h3 class="card-title">Visual Stories of Hope & Healing</h3>
+          </div>
+          
+          <p style="margin-bottom: 2rem; font-size: 1.1rem;">Images have the power to convey emotions and experiences that words sometimes cannot capture. This gallery showcases the diverse faces of international student mental health - from struggle to healing, from isolation to community.</p>
+          
+          <div class="gallery-container">
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=400&h=300&fit=crop" alt="Diverse international students supporting each other">
+              <div class="gallery-overlay">
+                <span>Building Bridges: International students from different cultures forming supportive friendships</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=300&fit=crop" alt="Student finding comfort in counseling">
+              <div class="gallery-overlay">
+                <span>Safe Spaces: Professional counseling provides culturally-sensitive mental health support</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop" alt="Peaceful meditation practice">
+              <div class="gallery-overlay">
+                <span>Inner Peace: Mindfulness practices adapted for international student experiences</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop" alt="Students sharing stories in support group">
+              <div class="gallery-overlay">
+                <span>Shared Stories: Support groups create connections across cultural boundaries</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=400&h=300&fit=crop" alt="Balanced study environment">
+              <div class="gallery-overlay">
+                <span>Balanced Growth: Creating environments that support both academic and mental wellness</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=400&h=300&fit=crop" alt="Mental health resources">
+              <div class="gallery-overlay">
+                <span>Professional Care: Accessing mental health resources designed for international students</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=400&h=300&fit=crop" alt="Building community and belonging">
+              <div class="gallery-overlay">
+                <span>Finding Home: Creating belonging and community in new cultural environments</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop" alt="Achievement despite challenges">
+              <div class="gallery-overlay">
+                <span>Resilient Success: Achieving dreams while maintaining mental health and wellbeing</span>
+              </div>
+            </div>
+            
+            <div class="gallery-item">
+              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=400&h=300&fit=crop" alt="Art therapy session">
+              <div class="gallery-overlay">
+                <span>Creative Expression: Art therapy helps process emotions across language barriers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🎨</div>
+            <h3 class="card-title">Art Therapy & Creative Expression</h3>
+          </div>
+          
+          <p style="margin-bottom: 2rem;">Creative expression can be a powerful tool for processing emotions, communicating across language barriers, and building connections with others. Many international students find that art, music, writing, and other creative outlets provide unique pathways to healing.</p>
+          
+          <div class="feature-container">
+            <div class="feature-item">
+              <div class="feature-icon">🖼️</div>
+              <h4 class="feature-title">Visual Art Therapy</h4>
+              <p>Drawing, painting, and digital art can help express feelings that are difficult to put into words, especially when navigating multiple languages and cultural contexts.</p>
+              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=300&h=200&fit=crop" alt="Student engaged in art therapy" class="feature-image">
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">🎵</div>
+              <h4 class="feature-title">Music & Sound Healing</h4>
+              <p>Music transcends cultural boundaries and can provide comfort, emotional release, and connection to both home and new experiences.</p>
+              <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=300&h=200&fit=crop" alt="Students sharing music and cultural expressions" class="feature-image">
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">✍️</div>
+              <h4 class="feature-title">Expressive Writing</h4>
+              <p>Journaling, poetry, and storytelling in any language can help process complex emotions and cultural experiences while building communication skills.</p>
+              <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=300&h=200&fit=crop" alt="Student writing in journal" class="feature-image">
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">🎭</div>
+              <h4 class="feature-title">Drama & Movement</h4>
+              <p>Theater, dance, and movement therapy can help international students explore identity, build confidence, and connect with their bodies in new environments.</p>
+              <img src="https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=300&h=200&fit=crop" alt="Students in expressive movement therapy" class="feature-image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SUPPORT/JOIN US TAB - Enhanced with RSVP Forms -->
+    <section id="support" class="tab-content">
+      <div class="section">
+        <!-- Community Stats -->
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">📊</div>
+            <h3 class="card-title">Our Growing Community</h3>
+          </div>
+          
+          <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&h=300&fit=crop" alt="Community volunteers supporting mental health initiatives" class="hero-image">
+          
+          <div class="community-stats-container">
+            <div class="stat-item">
+              <span class="stat-number" id="meetup-count">47</span>
+              <span class="stat-label">people have joined our virtual meetups</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="volunteer-count">23</span>
+              <span class="stat-label">dedicated volunteers are making a difference</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">12</span>
+              <span class="stat-label">countries represented in our community</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">95%</span>
+              <span class="stat-label">of participants report feeling more supported</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Virtual Meetup RSVP -->
+        <div id="virtual-meetup" class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">💻</div>
+            <h3 class="card-title">Join Our Virtual Support Meetups</h3>
+          </div>
+          
+          <div class="rsvp-container">
+            <div class="rsvp-info">
+              <h4>🌍 Weekly International Student Mental Health Circles</h4>
+              <p>Join fellow international students from around the world in confidential, supportive virtual gatherings. Our peer-led sessions provide a safe space to share experiences, learn coping strategies, and build lasting connections.</p>
+              
+              <div class="meetup-details">
+                <p><strong>📅 When:</strong> Every Wednesday, 7:00 PM EST / 12:00 AM GMT</p>
+                <p><strong>⏰ Duration:</strong> 90 minutes</p>
+                <p><strong>🗣️ Languages:</strong> English (primary), with multilingual support available</p>
+                <p><strong>👥 Group Size:</strong> 8-12 participants for intimate discussions</p>
+                <p><strong>🎯 Focus Areas:</strong> Cultural adaptation, academic stress, homesickness, building resilience</p>
+              </div>
+              
+              <div class="rsvp-participants">
+                <h4>Recent Participants:</h4>
+                <div id="meetup-participants">
+                  <p>🎟️ Sarah from Kenya will be there!</p>
+                  <p>🎟️ Ahmed from Egypt has joined our community!</p>
+                  <p>🎟️ Maria from Brazil is participating!</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-container">
+              <form id="meetup-form" title="Virtual Meetup RSVP Form">
+                <h4>Reserve Your Spot</h4>
+                
+                <div class="form-group">
+                  <label for="meetup-name">Full Name *</label>
+                  <input type="text" id="meetup-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="meetup-email">Email Address *</label>
+                  <input type="email" id="meetup-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="meetup-country">Home Country *</label>
+                  <input type="text" id="meetup-country" name="country" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="meetup-timezone">Your Timezone *</label>
+                  <select id="meetup-timezone" name="timezone" required>
+                    <option value="">Select your timezone</option>
+                    <option value="EST">Eastern Time (EST/EDT)</option>
+                    <option value="CST">Central Time (CST/CDT)</option>
+                    <option value="MST">Mountain Time (MST/MDT)</option>
+                    <option value="PST">Pacific Time (PST/PDT)</option>
+                    <option value="GMT">Greenwich Mean Time (GMT)</option>
+                    <option value="CET">Central European Time (CET)</option>
+                    <option value="IST">India Standard Time (IST)</option>
+                    <option value="JST">Japan Standard Time (JST)</option>
+                    <option value="AEST">Australian Eastern Time (AEST)</option>
+                    <option value="Other">Other (we'll contact you)</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="meetup-focus">What would you like to focus on? *</label>
+                  <select id="meetup-focus" name="focus-area" required>
+                    <option value="">Choose your primary interest</option>
+                    <option value="cultural-adaptation">Cultural adaptation & integration</option>
+                    <option value="academic-stress">Academic pressure & time management</option>
+                    <option value="social-connections">Building social connections</option>
+                    <option value="homesickness">Managing homesickness & isolation</option>
+                    <option value="anxiety-depression">Anxiety & depression support</option>
+                    <option value="family-expectations">Family expectations & cultural conflicts</option>
+                    <option value="career-concerns">Career anxiety & future planning</option>
+                    <option value="general-support">General peer support</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="meetup-experience">Previous group support experience (optional)</label>
+                  <select id="meetup-experience" name="experience">
+                    <option value="first-time">This is my first time</option>
+                    <option value="some-experience">I've attended similar groups</option>
+                    <option value="experienced">I'm experienced with support groups</option>
+                    <option value="peer-supporter">I'd like to help support others</option>
+                  </select>
+                </div>
+              </form>
+              
+              <button id="meetup-button" class="rsvp-submit-btn">Join Virtual Meetup 💻</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Volunteer RSVP -->
+        <div id="volunteer-signup" class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">🤝</div>
+            <h3 class="card-title">Become a Mental Health Advocate</h3>
+          </div>
+          
+          <div class="rsvp-container">
+            <div class="rsvp-info">
+              <h4>🌟 Make a Difference in Students' Lives</h4>
+              <p>Join our team of dedicated volunteers working to expand mental health support for international students. Whether you have lived experience, professional training, or simply a compassionate heart, there's a place for you in our mission.</p>
+              
+              <div class="volunteer-opportunities">
+                <h5>🎯 Volunteer Opportunities:</h5>
+                <ul>
+                  <li><strong>Peer Mentors:</strong> Support new international students through their transition</li>
+                  <li><strong>Content Contributors:</strong> Share resources, write articles, create helpful materials</li>
+                  <li><strong>Event Coordinators:</strong> Help organize virtual and in-person support events</li>
+                  <li><strong>Technical Support:</strong> Maintain our platform and improve user experience</li>
+                  <li><strong>Community Moderators:</strong> Facilitate safe, supportive online discussions</li>
+                  <li><strong>Outreach Ambassadors:</strong> Connect with universities and organizations</li>
+                  <li><strong>Crisis Support:</strong> Trained volunteers for emergency mental health support</li>
+                </ul>
+              </div>
+              
+              <div class="rsvp-participants">
+                <h4>Our Amazing Volunteers:</h4>
+                <div id="volunteer-participants">
+                  <p>🌟 Dr. Yuki from Japan (Mental Health Professional)</p>
+                  <p>🌟 Marcus from Germany (Peer Mentor)</p>
+                  <p>🌟 Fatima from Morocco (Content Creator)</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-container">
+              <form id="volunteer-form" title="Volunteer Registration Form">
+                <h4>Join Our Team</h4>
+                
+                <div class="form-group">
+                  <label for="volunteer-name">Full Name *</label>
+                  <input type="text" id="volunteer-name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-email">Email Address *</label>
+                  <input type="email" id="volunteer-email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-location">Current Location *</label>
+                  <input type="text" id="volunteer-location" name="location" placeholder="City, Country" required>
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-background">Background *</label>
+                  <select id="volunteer-background" name="background" required>
+                    <option value="">Select your background</option>
+                    <option value="current-student">Current International Student</option>
+                    <option value="former-student">Former International Student</option>
+                    <option value="mental-health-professional">Mental Health Professional</option>
+                    <option value="healthcare-worker">Healthcare Worker</option>
+                    <option value="educator">Educator/Academic</option>
+                    <option value="community-advocate">Community Advocate</option>
+                    <option value="tech-professional">Technology Professional</option>
+                    <option value="other-professional">Other Professional</option>
+                    <option value="caring-individual">Caring Individual (No specific background)</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-interest">Primary Interest Area *</label>
+                  <select id="volunteer-interest" name="interest" required>
+                    <option value="">Choose your main interest</option>
+                    <option value="peer-mentoring">Peer Mentoring & Support</option>
+                    <option value="content-creation">Content Creation & Resources</option>
+                    <option value="event-coordination">Event Planning & Coordination</option>
+                    <option value="technical-support">Technical & Platform Support</option>
+                    <option value="community-moderation">Community Moderation</option>
+                    <option value="outreach-advocacy">Outreach & Advocacy</option>
+                    <option value="crisis-support">Crisis Support (requires training)</option>
+                    <option value="research-evaluation">Research & Program Evaluation</option>
+                    <option value="multilingual-support">Multilingual Support & Translation</option>
+                    <option value="general-volunteer">General Volunteer (willing to help anywhere)</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-availability">Time Commitment *</label>
+                  <select id="volunteer-availability" name="availability" required>
+                    <option value="">Select your availability</option>
+                    <option value="1-2-hours-week">1-2 hours per week</option>
+                    <option value="3-5-hours-week">3-5 hours per week</option>
+                    <option value="6-10-hours-week">6-10 hours per week</option>
+                    <option value="10-plus-hours-week">10+ hours per week</option>
+                    <option value="project-based">Project-based (flexible)</option>
+                    <option value="seasonal-support">Seasonal support (exam periods, etc.)</option>
+                    <option value="crisis-on-call">Crisis support (on-call basis)</option>
+                  </select>
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-languages">Languages Spoken (optional)</label>
+                  <input type="text" id="volunteer-languages" name="languages" placeholder="English, Spanish, Mandarin, etc.">
+                </div>
+                
+                <div class="form-group">
+                  <label for="volunteer-experience">Relevant Experience (optional)</label>
+                  <textarea id="volunteer-experience" name="experience" rows="3" placeholder="Share any relevant experience with mental health, international students, volunteering, etc."></textarea>
+                </div>
+              </form>
+              
+              <button id="volunteer-button" class="rsvp-submit-btn">Join as Volunteer 🌟</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Other Support Options -->
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">💪</div>
+            <h3 class="card-title">Other Ways to Get Involved</h3>
+          </div>
+          
+          <div class="feature-container">
+            <div class="feature-item">
+              <div class="feature-icon">📧</div>
+              <h4 class="feature-title">Newsletter & Updates</h4>
+              <p>Stay informed about new resources, research findings, and community events in international student mental health.</p>
+              <button class="cta-button" onclick="showNewsletterForm()">Subscribe to Newsletter</button>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">🎓</div>
+              <h4 class="feature-title">Campus Ambassador Program</h4>
+              <p>Become a mental health advocate on your campus. Help spread awareness and connect students with resources.</p>
+              <button class="cta-button" onclick="showAmbassadorForm()">Become Ambassador</button>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">💝</div>
+              <h4 class="feature-title">Peer Support Network</h4>
+              <p>Connect with other international students who understand your journey. Share experiences and provide mutual support.</p>
+              <button class="cta-button" onclick="showPeerNetwork()">Join Network</button>
+            </div>
+            
+            <div class="feature-item">
+              <div class="feature-icon">📚</div>
+              <h4 class="feature-title">Resource Contributions</h4>
+              <p>Share helpful resources, research, or tools that have supported your mental health journey.</p>
+              <button class="cta-button" onclick="showResourceForm()">Share Resources</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Support Directory -->
+        <div class="glass-card">
+          <div class="card-header">
+            <div class="card-icon">📞</div>
+            <h3 class="card-title">Professional Support Directory</h3>
+          </div>
+          
+          <p style="margin-bottom: 2rem;">Find qualified mental health professionals who specialize in working with international students and understand cultural challenges.</p>
+          
+          <div class="resource-container">
+            <div class="resource-item">
+              <h4 style="color: #4facfe; margin-bottom: 1rem;">🌍 International Counselors</h4>
+              <p>Mental health professionals with specialized training in cross-cultural therapy and international student experiences.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Culturally adapted therapy approaches</li>
+                <li>Multilingual counseling services</li>
+                <li>Understanding of visa and academic pressures</li>
+                <li>Family system and cultural integration work</li>
+              </ul>
+            </div>
+            
+            <div class="resource-item">
+              <h4 style="color: #fa709a; margin-bottom: 1rem;">🏥 Campus Health Centers</h4>
+              <p>University-based mental health services specifically designed for student populations.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Free or low-cost counseling services</li>
+                <li>Crisis intervention and emergency support</li>
+                <li>Group therapy and support groups</li>
+                <li>Psychiatric services and medication management</li>
+              </ul>
+            </div>
+            
+            <div class="resource-item">
+              <h4 style="color: #667eea; margin-bottom: 1rem;">💻 Online Therapy Platforms</h4>
+              <p>Digital mental health platforms offering convenient access to licensed therapists and counselors.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Flexible scheduling across time zones</li>
+                <li>Video, audio, and text-based sessions</li>
+                <li>Reduced cost compared to traditional therapy</li>
+                <li>Access to international and multilingual therapists</li>
+              </ul>
+            </div>
+            
+            <div class="resource-item">
+              <h4 style="color: #11998e; margin-bottom: 1rem;">🌐 Community Organizations</h4>
+              <p>Local and international organizations providing culturally-specific mental health support.</p>
+              <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Cultural community centers</li>
+                <li>Religious and spiritual counseling</li>
+                <li>Immigrant and refugee support services</li>
+                <li>International student associations</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Success Modal -->
+  <div id="success-modal" class="modal">
+    <div class="modal-container">
+      <div class="modal-content">
+        <div id="modal-text">
+          <p>Thank you for joining our community!</p>
+        </div>
+        <div id="modal-image">
+          <img src="https://images.unsplash.com/photo-1516849841032-87cbac4d88f7?w=200&h=200&fit=crop" alt="Welcome celebration" id="modal-img">
+        </div>
+        <button id="modal-close-btn" class="modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p style="margin-bottom: 1rem;">This platform provides mental health support resources for international students. Information is sourced from reputable organizations including WHO and established mental health institutions.</p>
+      <p>Created with 💙 by Meenakshi Sethi | Academic project for mental health awareness</p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">Disclaimer: This is an educational project and not a substitute for professional mental health care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
