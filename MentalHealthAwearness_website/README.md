@@ -179,15 +179,11 @@ Created by **Meenakshi Sethi** as part of CodePath Summer 2025 cohort.
 
 For questions about this project or mental health resources:
 - LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
 
 
 ## 🚨 Disclaimer
 
-This is an educational project and not a substitute for professional mental health care. If you're experiencing a mental health crisis, please contact:
-- US: 988 (Crisis Lifeline)
-- International: Your local emergency services
-- Text: HOME to 741741
+This is an educational project and not a substitute for professional mental health care. If you are in crisis, please reach out to a qualified mental health professional or call your local crisis helpline right away.
 
 ---
 
