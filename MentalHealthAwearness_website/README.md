@@ -11,6 +11,8 @@ A responsive web application providing mental health resources, community suppor
 - Volunteer registration platform
 - Culturally-sensitive resource directory
 
+- Project Demo: [Live Demo Link if deployed](https://orchid-honest-watch-979.vscodeedu.app/)
+  
 ## 🎯 Features
 
 ### Core Functionality
@@ -178,7 +180,7 @@ Created by **Meenakshi Sethi** as part of CodePath Summer 2025 cohort.
 For questions about this project or mental health resources:
 - LinkedIn: [Your LinkedIn Profile]
 - Email: [Your Email]
-- Project Demo: [Live Demo Link if deployed]
+
 
 ## 🚨 Disclaimer
 
